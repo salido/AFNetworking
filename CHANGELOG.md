@@ -60,7 +60,7 @@ Released on Friday, December 15, 2017. All issues associated with this milestone
 #### Fixed
 * Fixed crash around customizing `NSURLCache` size for < iOS 8.2
 	* Implemented by kcharwood in [#3735](https://github.com/AFNetworking/AFNetworking/pull/3735).
-* Fixed issue where `UIWebView` extension did not preserve all of the request information
+* Fixed issue where `WKWebView` extension did not preserve all of the request information
 	* Implemented by skyline75489 in [#3733](https://github.com/AFNetworking/AFNetworking/pull/3733).
 * Fixed bug with webview delegate callback
 	* Implemented by kcharwood in [#3727](https://github.com/AFNetworking/AFNetworking/pull/3727).
@@ -136,7 +136,7 @@ Released on Thursday, March 31, 2016. All issues associated with this milestone 
  * Implemented by zwm in [#3294](https://github.com/AFNetworking/AFNetworking/pull/3294).
 * Fixed status code 204/205 handling
  * Implemented by Kevin Harwood in [#3292](https://github.com/AFNetworking/AFNetworking/pull/3292).
-* Fixed crash when passing nil/null for progress in UIWebView extension
+* Fixed crash when passing nil/null for progress in WKWebView extension
  * Implemented by Kevin Harwood in [#3289](https://github.com/AFNetworking/AFNetworking/pull/3289).
 
 #### Removed
@@ -247,7 +247,7 @@ For detailed information about migrating to AFNetworking 3.0.0, please reference
  * Implemented by Kevin Harwood in [#3152](https://github.com/AFNetworking/AFNetworking/pull/3152).
 * Fixed `AFImageDownloader` stalling after numerous failures
  * Implemented by Rick Silva in [#3150](https://github.com/AFNetworking/AFNetworking/pull/3150).
-* Fixed warnings generated in UIWebView category
+* Fixed warnings generated in WKWebView category
  * Implemented by Kevin Harwood in [#3126](https://github.com/AFNetworking/AFNetworking/pull/3126).
 
 #### Removed
@@ -444,7 +444,7 @@ Released on 2015-05-14. All issues associated with this milestone can be found u
 
 * Add guards for unsupported features in iOS 8 App Extensions
 
-* Add missing delegate callbacks to 	`UIWebView` category
+* Add missing delegate callbacks to 	`WKWebView` category
  
 * Add test and implementation of strict default certificate validation
 
@@ -847,7 +847,7 @@ in User-Agent string (Samuel Goodwin)
 
   * Fix `-Wshorten-64-to-32` warning (Jesse Collis)
 
-  * Remove unnecessary #imports in `UIImageView` & `UIWebView` categories
+  * Remove unnecessary #imports in `UIImageView` & `WKWebView` categories
 (Jesse Collis)
 
   * Fix call to `CFStringTransform()` by checking return value before setting
@@ -873,8 +873,8 @@ the server should be trusted. (Oliver Letterer, Eric Allam)
   * Add default initializer to make `AFHTTPRequestOperationManager`
 consistent with `AFHTTPSessionManager` (Marcelo Fabri)
 
-  * Add documentation about `UIWebView` category and implementing
-`UIWebViewDelegate` (Mattt Thompson)
+  * Add documentation about `WKWebView` category and implementing
+`WKWebViewDelegate` (Mattt Thompson)
 
   * Add missing `NSCoding` and `NSCopying` implementations for
 `AFJSONRequestSerializer` (Mattt Thompson)
@@ -1042,7 +1042,7 @@ Thompson)
 
   * Fix typo in comments (@palringo)
 
-  * Fix UIWebView category to use supplied success callback (Mattt Thompson)
+  * Fix WKWebView category to use supplied success callback (Mattt Thompson)
 
   * Fix various static analyzer warnings (Kyle Fuller, Jesse Collis, Mattt
 Thompson)
@@ -1117,7 +1117,7 @@ calls (Mindaugas Vaičiūnas)
 
 ## [2.0.2](https://github.com/AFNetworking/AFNetworking/releases/tag/2.0.2) (2013-10-29)
 
-  * Add `UIWebView
+  * Add `WKWebView
  -loadRequest:MIMEType:textEncodingName:progress:success:failure:` (Mattt
  Thompson)
 
